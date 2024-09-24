@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NABEEL AHMAD - Frontend Developer & AI Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #434b66, #0051ff, #102f5e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="vanta-bg" class="fixed inset-0 z-0"></div>
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">NABEEL AHMAD</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#experience" class="mobile-nav-link">Experience</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10">
+        <section id="home" class="min-h-screen flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 gradient-text">NABEEL AHMAD</h1>
+                <p class="text-xl md:text-2xl mb-8">Frontend Developer & <span id="typed-text"></span></p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">View My Work</a>
+                    <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-800 bg-opacity-80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="1720734111527 (2).jpeg" alt="NABEEL AHMAD" class="rounded-full w-64 h-64 object-cover mx-auto border-4 border-blue-500 shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg mb-4">Hello! I'm a passionate frontend web developer and AI enthusiast. Currently, I'm a Technical Team Member (AI-ML & Web Dev) at Team Envision, SRMIST, and an Associate Lead for Curations at TEDxSRMIST.</p>
+                        <p class="text-lg mb-4">My journey in tech has been driven by a fascination with creating intuitive user interfaces and exploring the potential of artificial intelligence. I love bringing ideas to life through code and design.</p>
+                        <p class="text-lg mb-4">When I'm not coding, you can find me brainstorming for TEDx events, experimenting with new ideas, or thoughts.</p>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="https://www.linkedin.com/in/nabeelahmad10/" class="text-blue-400 hover:text-blue-300 transition duration-300"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://github.com/nabeelahmad10" class="text-blue-400 hover:text-blue-300 transition duration-300"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.instagram.com/thenabeeeeel/" class="text-blue-400 hover:text-blue-300 transition duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Skills & Technologies</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-html5 text-5xl mb-4 text-orange-500"></i>
+                        <h3 class="text-xl font-semibold">HTML5</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-css3-alt text-5xl mb-4 text-blue-500"></i>
+                        <h3 class="text-xl font-semibold">CSS3</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-js text-5xl mb-4 text-yellow-500"></i>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-react text-5xl mb-4 text-blue-400"></i>
+                        <h3 class="text-xl font-semibold">React</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-node-js text-5xl mb-4 text-green-500"></i>
+                        <h3 class="text-xl font-semibold">Node.js</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fas fa-database text-5xl mb-4 text-purple-500"></i>
+                        <h3 class="text-xl font-semibold">MongoDB</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-python text-5xl mb-4 text-blue-500"></i>
+                        <h3 class="text-xl font-semibold">Python</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                        <i class="fas fa-brain text-5xl mb-4 text-pink-500"></i>
+                        <h3 class="text-xl font-semibold">Machine Learning</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-gray-800 bg-opacity-80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="istockphoto-1073207930-612x612.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">elsaAI</h3>
+                            <p class="text-gray-300 mb-4">An AI Assistant that can talk, interact and respond to any question based on user input.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-blue-400 hover:text-blue-300">View Project</a>
+                                <div class="flex space-x-2">
+                                    <span class="bg-blue-500 text-xs font-semibold px-2 py-1 rounded">Tailwind</span>
+                                    <span class="bg-green-500 text-xs font-semibold px-2 py-1 rounded">Node.js</span>
+                                    <span class="bg-purple-500 text-xs font-semibold px-2 py-1 rounded">GPT-3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="cancer-diagnosis-icon-vector-image-can-be-used-artificial-intelligence_120816-207531.avif" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Cancer Detection AI Model</h3>
+                            <p class="text-gray-300 mb-4">A cancer detector model based on logistic regression that classifies malignant and benign tumors by scanning the images.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-blue-400 hover:text-blue-300">View Project</a>
+                                <div class="flex space-x-2">
+                                    <span class="bg-yellow-500 text-xs font-semibold px-2 py-1 rounded">Python</span>
+                                    <span class="bg-red-500 text-xs font-semibold px-2 py-1 rounded">LR</span>
+                                    <span class="bg-blue-500 text-xs font-semibold px-2 py-1 rounded">ML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        <img src="a80699b1-2936-45eb-9799-8dfbc624c8d7.avif" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Interactive ArtWork Generator</h3>
+                            <p class="text-gray-300 mb-4">An AI model based on stable diffusion that can generate any artwork just by giving prompts.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://github.com/nabeelahmad10/Arrtify.ai/tree/main" class="text-blue-400 hover:text-blue-300">View Project</a>
+                                <div class="flex space-x-2">
+                                    <span class="bg-yellow-500 text-xs font-semibold px-2 py-1 rounded">Python</span>
+                                    <span class="bg-red-500 text-xs font-semibold px-2 py-1 rounded">Tailwind</span>
+                                    <span class="bg-blue-500 text-xs font-semibold px-2 py-1 rounded">HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section id="experience" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Experience</h2>
+                <div class="space-y-12">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Technical Team Member (AI-ML & Web Dev)</h3>
+                        <p class="text-xl text-blue-400 mb-2">Team Envision, SRMIST</p>
+                        <p class="text-gray-300 mb-4">May 2024 - Present</p>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Develop innovative AI and machine learning solutions for various projects</li>
+                            <li>Collaborate with team members to create responsive and user-friendly web applications</li>
+                            <li>Participate in hackathons and coding competitions, representing the university</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Associate Lead, Curations</h3>
+                        <p class="text-xl text-blue-400 mb-2">TEDxSRMIST</p>
+                        <p class="text-gray-300 mb-4">2023 - Present</p>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Curate and research potential speakers for TEDx events</li>
+                            <li>Assist in organizing and managing TEDx events at SRMIST</li>
+                            <li>Collaborate with other team members to ensure high-quality content and smooth event execution</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2">Freelance Web Developer</h3>
+                        <p class="text-xl text-blue-400 mb-2">Self-employed</p>
+                        <p class="text-gray-300 mb-4">2023 - Present</p>
+                        <ul class="list-disc list-inside text-gray-300">
+                            <li>Design and develop custom websites for clients across various industries</li>
+                            <li>Implement responsive designs and ensure cross-browser compatibility</li>
+                            <li>Provide ongoing maintenance and support for client websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-800 bg-opacity-80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Get in Touch</h2>
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2 text-blue-400"></i> nabeelahmad.dbg@gmail.com</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2 text-blue-400"></i> +91 9572485883</p>
+                        <p class="mb-4"><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> Chennai, Tamil Nadu, India</p>
+                        <h3 class="text-2xl font-bold mb-4">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/nabeelahmad10/" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://github.com/nabeelahmad10" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.instagram.com/thenabeeeeel/" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Nabeel Ahmad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 3D background effect
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0050e, /* Lighter Dark Blue */
+            shininess: 40.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.75,
+            zoom: 0.65
+        });
+
+        // Typed.js for dynamic text
+        var typed = new Typed('#typed-text', {
+            strings: ['AI Enthusiast', 'ML Researcher', 'TEDx Curator'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
+        });
+
+        // Intersection Observer for fade-in effect
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach((section) => {
+            section.classList.add('transition', 'duration-1000', 'ease-in-out', 'opacity-0');
+            observer.observe(section);
+        });
+
+        // Form submission (for demonstration purposes)
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! You will get a response soon.');
+            form.reset();
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-gray-900');
+                nav.classList.remove('bg-gray-800');
+            } else {
+                nav.classList.add('bg-gray-800');
+                nav.classList.remove('bg-gray-900');
+            }
+        });
+
+        // Highlight active nav link
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-400');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-blue-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
